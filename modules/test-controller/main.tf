@@ -724,7 +724,7 @@ module "certbot_lambda" {
   function_name = "${local.name}-certbot-lambda"
   description   = "Certbot lambda"
   handler       = "main.handler"
-  runtime       = "python3.8"
+  runtime       = "python3.10"
   timeout       = 120
 
   build_in_docker = var.certbot_lambda_build_in_docker
